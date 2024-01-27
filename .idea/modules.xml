@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/all_kc_ms_s.iml" filepath="$PROJECT_DIR$/all_kc_ms_s.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-front-thymeleaf-app/customer-front-thymeleaf-app.iml" filepath="$PROJECT_DIR$/customer-front-thymeleaf-app/customer-front-thymeleaf-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inv-service/inv-service.iml" filepath="$PROJECT_DIR$/inv-service/inv-service.iml" />
+    </modules>
+  </component>
+</project>
