@@ -35,6 +35,8 @@ public class SecuriteConfig {
                 .authorizeHttpRequests(ar->ar.requestMatchers("/","/oauth2Login/**","/webjars/**", "h2-console/**").permitAll())
                 //c'est a dire tout les requeette necessite une authentification
                 .authorizeHttpRequests(ar-> ar.anyRequest().authenticated())
+                .headers(h->h.frameOptions(fo->fo.disable()))
+                .csrf(csrf->csrf.ignoringRequestMatchers("/h2-console/**"))
                 .oauth2Login(al->al.loginPage("/oauth2Login").defaultSuccessUrl("/"))
                 .logout((logout) -> logout
                         .logoutSuccessHandler(oidcLogoutSuccessHandler())
